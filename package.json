@@ -14,10 +14,17 @@
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
     "gulp-concat": "^2.6.1",
+    "gulp-jscs": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "jshint": "^2.13.4"
+  },
+  "dependencies": {
+    "core-js": "^3.22.8",
+    "sass": "^1.52.2"
   }
 }

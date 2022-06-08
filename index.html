@@ -4,8 +4,32 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/scss/main.css">
     <title>Dawid Michewicz - Recruitment task</title>
 </head>
 <body>
+    <section id="section-1">
+        <picture>
+            <source media="(max-width: 480px)" srcset="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_480.jpg">
+            <source media="(max-width: 784px)" srcset="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg">
+            <source media="(max-width: 1400px)" srcset="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_1_1,c_fill,g_auto__c_scale,w_767.jpg">
+            <img src="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1400.jpg" alt="hero-img">
+        </picture>
+        <div class="text-container">
+            <h1>Lorem Ipsum</h1>
+            <p>Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
+            <button>Button</button>
+        </div>
+    </section>
 
+    <div class="alert-container not-active">
+        <div class="alert">
+            <button id="close-alert"><i class="fa fa-close"></i></button>
+            <h2>Alert!</h2>
+            <p>You have clicked <span class="counter"></span> to related button.</p>
+        </div>
+    </div>
+
+    <script src=".src/js/main.js"></script>
 </body>
