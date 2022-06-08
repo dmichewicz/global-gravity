@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@mixin button {
+    height: 48px;
+    width: 128px;
+    border: none;
+    border-radius: 32px;
+    background: #E4C1AE;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
 
 $font: 'Roboto' sans-serif;
 
@@ -14,7 +25,7 @@ body {
 }
 
 #section-1 {
-    width: 80%;
+    width: 1440px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -44,15 +55,7 @@ body {
             line-height: 24px;
         }
         button {
-            height: 48px;
-            width: 128px;
-            border: none;
-            border-radius: 32px;
-            background: #E4C1AE;
-            font-weight: 700;
-            font-size: 16px;
-            color: white;
-            cursor: pointer;
+            @include button();
         }
 
     }
@@ -109,6 +112,10 @@ body {
 
         
     }
+}
+
+.reset-button {
+    @include button();
 }
 
 
