@@ -3,12 +3,12 @@ const alertContainer = document.querySelector('.alert-container');
 const alertPopup = document.querySelector('.alert');
 const closePopup = document.querySelector('#close-alert');
 const counterSpan = document.querySelector('.counter-span');
+const resetButton = document.querySelector('#reset-button');
 
 let counter;
-let resetButton;
 
-localStorage.getItem('counter') === null ? counter = 0 : counter = localStorage.getItem('counter') ;
 
+localStorage.getItem('counter') === null ? counter = 0 : counter = parseInt(localStorage.getItem('counter')) ;
 
 
 
@@ -17,23 +17,17 @@ const alertOpener = () => {
     counter++;
     localStorage.setItem('counter', counter);
     counterSpan.innerText = counter + ' times';
-    if (counter === 5) {
-        createResetButton();
+    if (counter >= 5) {
+        resetButton.classList.remove('not-active');
         resetButton.addEventListener('click', resetCounter);
     }
 }
 
-const createResetButton = () => {
-        resetButton = document.createElement('button');
-        alertPopup.appendChild(resetButton);
-        resetButton.classList.add('reset-button');
-        resetButton.innerText = 'Reset counter'
-}
 
 const resetCounter = () => {
     counter = 0;
     localStorage.setItem('counter', counter);
-    resetButton.remove();
+    resetButton.classList.add('not-active');
     counterSpan.innerText = counter + ' times';
 }
 
